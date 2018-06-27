@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expense_Type));
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btnClose = new System.Windows.Forms.Button();
             this.lblHeading = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtCategory = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -50,10 +49,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.bunifuSeparator1);
-            this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.lblHeading);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(20, 30);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(500, 43);
             this.panel1.TabIndex = 0;
@@ -71,22 +69,6 @@
             this.bunifuSeparator1.Transparency = 100;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.IndianRed;
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(468, 7);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 21);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = false;
-            // 
             // lblHeading
             // 
             this.lblHeading.AutoSize = true;
@@ -102,9 +84,9 @@
             this.panel2.Controls.Add(this.txtCategory);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(0, 43);
+            this.panel2.Location = new System.Drawing.Point(20, 73);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 257);
+            this.panel2.Size = new System.Drawing.Size(500, 207);
             this.panel2.TabIndex = 1;
             // 
             // txtCategory
@@ -133,7 +115,7 @@
             this.panel3.Controls.Add(this.btnRemove);
             this.panel3.Controls.Add(this.btnSave);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 245);
+            this.panel3.Location = new System.Drawing.Point(20, 225);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(500, 55);
             this.panel3.TabIndex = 2;
@@ -262,15 +244,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(500, 300);
+            this.ClientSize = new System.Drawing.Size(540, 300);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Movable = false;
             this.Name = "Expense_Type";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
+            this.Resizable = false;
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "Expense Type";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -287,7 +275,6 @@
         private System.Windows.Forms.Panel panel3;
         private Bunifu.Framework.UI.BunifuElipse elipseExpensesType;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private System.Windows.Forms.Button btnClose;
         private Bunifu.Framework.UI.BunifuCustomLabel lblHeading;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancel;

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software.Master
 {
-    public partial class Expense_Type : Form
+    public partial class Expense_Type : MetroFramework.Forms.MetroForm
     {
         public Expense_Type()
         {
