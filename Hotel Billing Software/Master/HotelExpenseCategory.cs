@@ -12,7 +12,7 @@ using BAL.Master;
 
 namespace Hotel_Billing_Software.Master
 {
-    public partial class HotelExpenseCategory : Form
+    public partial class HotelExpenseCategory : MetroFramework.Forms.MetroForm
     {
         HotelExpenseCategoryMaster HotelExpense = new HotelExpenseCategoryMaster();
 
