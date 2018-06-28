@@ -26,5 +26,10 @@ namespace Hotel_Billing_Software.Transaction
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

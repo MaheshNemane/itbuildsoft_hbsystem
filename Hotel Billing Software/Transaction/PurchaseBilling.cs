@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BAL;
 using BAL.Master;
+using MetroFramework.Forms;
 
 namespace Hotel_Billing_Software.Transaction
 {
-    public partial class PurchaseBilling : Form
+    public partial class PurchaseBilling : MetroForm
     {
         SupplierMaster supplier = new SupplierMaster();
         MenuCategoryMaster MenuCategory = new MenuCategoryMaster();
