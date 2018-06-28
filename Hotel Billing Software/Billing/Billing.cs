@@ -18,7 +18,7 @@ namespace Hotel_Billing_Software.Billing
         }
 
         private void btnHallTable1_Click(object sender, EventArgs e)
-        {           
+        {
             Transaction.Bill objForm = new Transaction.Bill();
             BunifuThinButton2 btn = (BunifuThinButton2)sender;
             objForm.lblTableNo.Text = btn.ButtonText;
@@ -28,11 +28,6 @@ namespace Hotel_Billing_Software.Billing
             objForm.Dock = DockStyle.Fill;
             objForm.AutoScaleMode = AutoScaleMode.None;
             objForm.Show();
-        }
-
-        private void pnlACRoom_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
