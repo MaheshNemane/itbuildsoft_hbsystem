@@ -54,5 +54,15 @@ namespace Hotel_Billing_Software.Master
         {
 
         }
+
+        private void EmployeeRegistration_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

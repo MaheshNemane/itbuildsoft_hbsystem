@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using BAL.Master;
 namespace Hotel_Billing_Software.Master
 {
-    public partial class ProductRegistration : Form
+    public partial class ProductRegistration : MetroFramework.Forms.MetroForm
     {
         ProductMaster productMaster = new ProductMaster();
         MenuCategoryMaster menuCategory = new MenuCategoryMaster();
@@ -62,6 +62,11 @@ namespace Hotel_Billing_Software.Master
         }
 
         private void lblHeading_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

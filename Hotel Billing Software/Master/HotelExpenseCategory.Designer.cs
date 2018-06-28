@@ -37,10 +37,9 @@
             this.txtExpenseCategory = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRemove = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.elipseExpensesType = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -111,10 +110,9 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.bunifuSeparator2);
             this.panel3.Controls.Add(this.btnCancel);
-            this.panel3.Controls.Add(this.btnRemove);
             this.panel3.Controls.Add(this.btnSave);
+            this.panel3.Controls.Add(this.bunifuSeparator2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(20, 225);
             this.panel3.Name = "panel3";
@@ -134,13 +132,18 @@
             this.bunifuSeparator2.Transparency = 100;
             this.bunifuSeparator2.Vertical = false;
             // 
+            // elipseExpensesType
+            // 
+            this.elipseExpensesType.ElipseRadius = 25;
+            this.elipseExpensesType.TargetControl = this;
+            // 
             // btnCancel
             // 
             this.btnCancel.Activecolor = System.Drawing.Color.Orange;
             this.btnCancel.BackColor = System.Drawing.Color.DarkOrange;
             this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancel.BorderRadius = 5;
-            this.btnCancel.ButtonText = "Cancel";
+            this.btnCancel.ButtonText = "रद्द करा";
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.DisabledColor = System.Drawing.Color.Gray;
             this.btnCancel.Iconcolor = System.Drawing.Color.Transparent;
@@ -155,54 +158,18 @@
             this.btnCancel.IconVisible = true;
             this.btnCancel.IconZoom = 50D;
             this.btnCancel.IsTab = false;
-            this.btnCancel.Location = new System.Drawing.Point(396, 13);
+            this.btnCancel.Location = new System.Drawing.Point(308, 16);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.DarkOrange;
             this.btnCancel.OnHovercolor = System.Drawing.Color.Orange;
             this.btnCancel.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCancel.selected = false;
             this.btnCancel.Size = new System.Drawing.Size(93, 32);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.TabIndex = 26;
+            this.btnCancel.Text = "रद्द करा";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Textcolor = System.Drawing.Color.White;
             this.btnCancel.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRemove.BorderRadius = 5;
-            this.btnRemove.ButtonText = "Remove";
-            this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemove.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRemove.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRemove.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRemove.Iconimage")));
-            this.btnRemove.Iconimage_right = null;
-            this.btnRemove.Iconimage_right_Selected = null;
-            this.btnRemove.Iconimage_Selected = null;
-            this.btnRemove.IconMarginLeft = 0;
-            this.btnRemove.IconMarginRight = 0;
-            this.btnRemove.IconRightVisible = true;
-            this.btnRemove.IconRightZoom = 0D;
-            this.btnRemove.IconVisible = true;
-            this.btnRemove.IconZoom = 50D;
-            this.btnRemove.IsTab = false;
-            this.btnRemove.Location = new System.Drawing.Point(282, 13);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnRemove.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRemove.selected = false;
-            this.btnRemove.Size = new System.Drawing.Size(106, 32);
-            this.btnRemove.TabIndex = 2;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRemove.Textcolor = System.Drawing.Color.White;
-            this.btnRemove.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSave
             // 
@@ -210,7 +177,7 @@
             this.btnSave.BackColor = System.Drawing.Color.Green;
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSave.BorderRadius = 5;
-            this.btnSave.ButtonText = "Save";
+            this.btnSave.ButtonText = "जतन करा";
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.DisabledColor = System.Drawing.Color.Gray;
             this.btnSave.Iconcolor = System.Drawing.Color.Transparent;
@@ -225,24 +192,18 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 40D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(190, 13);
+            this.btnSave.Location = new System.Drawing.Point(407, 16);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.Green;
             this.btnSave.OnHovercolor = System.Drawing.Color.LimeGreen;
             this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSave.selected = false;
             this.btnSave.Size = new System.Drawing.Size(84, 32);
-            this.btnSave.TabIndex = 1;
-            this.btnSave.Text = "Save";
+            this.btnSave.TabIndex = 27;
+            this.btnSave.Text = "जतन करा";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Textcolor = System.Drawing.Color.White;
             this.btnSave.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // elipseExpensesType
-            // 
-            this.elipseExpensesType.ElipseRadius = 25;
-            this.elipseExpensesType.TargetControl = this;
             // 
             // HotelExpenseCategory
             // 
@@ -281,9 +242,8 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuCustomLabel lblHeading;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
-        private Bunifu.Framework.UI.BunifuFlatButton btnRemove;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSave;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtExpenseCategory;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSave;
     }
 }

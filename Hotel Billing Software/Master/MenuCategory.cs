@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software.Master
 {
-    public partial class MenuCategory : Form
+    public partial class MenuCategory : MetroFramework.Forms.MetroForm
     {
         MenuCategoryMaster menuCategory = new MenuCategoryMaster();
 
@@ -39,6 +39,11 @@ namespace Hotel_Billing_Software.Master
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -36,12 +36,11 @@
             this.lblCategoryRegistration = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.elipsCategory = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRemove = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtCategory = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -54,9 +53,9 @@
             this.panel1.Controls.Add(this.lblCategoryRegistration);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(20, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(500, 43);
+            this.panel1.Size = new System.Drawing.Size(468, 43);
             this.panel1.TabIndex = 3;
             // 
             // bunifuSeparator1
@@ -67,7 +66,7 @@
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(0, 33);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(500, 10);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(468, 10);
             this.bunifuSeparator1.TabIndex = 2;
             this.bunifuSeparator1.Transparency = 100;
             this.bunifuSeparator1.Vertical = false;
@@ -107,14 +106,55 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btnCancel);
-            this.panel2.Controls.Add(this.btnRemove);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.bunifuSeparator2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 253);
+            this.panel2.Location = new System.Drawing.Point(20, 240);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 47);
+            this.panel2.Size = new System.Drawing.Size(468, 47);
             this.panel2.TabIndex = 4;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator2.LineThickness = 1;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(468, 10);
+            this.bunifuSeparator2.TabIndex = 16;
+            this.bunifuSeparator2.Transparency = 100;
+            this.bunifuSeparator2.Vertical = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.txtCategory);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(20, 30);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(468, 257);
+            this.panel3.TabIndex = 5;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // txtCategory
+            // 
+            this.txtCategory.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCategory.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCategory.HintForeColor = System.Drawing.Color.Empty;
+            this.txtCategory.HintText = "मेनू प्रकार  नाव";
+            this.txtCategory.isPassword = false;
+            this.txtCategory.LineFocusedColor = System.Drawing.Color.Tomato;
+            this.txtCategory.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtCategory.LineMouseHoverColor = System.Drawing.Color.Tomato;
+            this.txtCategory.LineThickness = 2;
+            this.txtCategory.Location = new System.Drawing.Point(108, 101);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(257, 29);
+            this.txtCategory.TabIndex = 0;
+            this.txtCategory.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnCancel
             // 
@@ -137,52 +177,18 @@
             this.btnCancel.IconVisible = true;
             this.btnCancel.IconZoom = 50D;
             this.btnCancel.IsTab = false;
-            this.btnCancel.Location = new System.Drawing.Point(395, 12);
+            this.btnCancel.Location = new System.Drawing.Point(272, 12);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.DarkOrange;
             this.btnCancel.OnHovercolor = System.Drawing.Color.Orange;
             this.btnCancel.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCancel.selected = false;
             this.btnCancel.Size = new System.Drawing.Size(93, 32);
-            this.btnCancel.TabIndex = 22;
+            this.btnCancel.TabIndex = 30;
             this.btnCancel.Text = "रद्द करा";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Textcolor = System.Drawing.Color.White;
             this.btnCancel.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRemove.BorderRadius = 5;
-            this.btnRemove.ButtonText = "काढून टाका";
-            this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemove.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRemove.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRemove.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRemove.Iconimage")));
-            this.btnRemove.Iconimage_right = null;
-            this.btnRemove.Iconimage_right_Selected = null;
-            this.btnRemove.Iconimage_Selected = null;
-            this.btnRemove.IconMarginLeft = 0;
-            this.btnRemove.IconMarginRight = 0;
-            this.btnRemove.IconRightVisible = true;
-            this.btnRemove.IconRightZoom = 0D;
-            this.btnRemove.IconVisible = true;
-            this.btnRemove.IconZoom = 50D;
-            this.btnRemove.IsTab = false;
-            this.btnRemove.Location = new System.Drawing.Point(281, 12);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnRemove.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRemove.selected = false;
-            this.btnRemove.Size = new System.Drawing.Size(106, 32);
-            this.btnRemove.TabIndex = 23;
-            this.btnRemove.Text = "काढून टाका";
-            this.btnRemove.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRemove.Textcolor = System.Drawing.Color.White;
-            this.btnRemove.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnSave
             // 
@@ -205,72 +211,37 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 40D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(189, 12);
+            this.btnSave.Location = new System.Drawing.Point(371, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.Green;
             this.btnSave.OnHovercolor = System.Drawing.Color.LimeGreen;
             this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSave.selected = false;
             this.btnSave.Size = new System.Drawing.Size(84, 32);
-            this.btnSave.TabIndex = 24;
+            this.btnSave.TabIndex = 31;
             this.btnSave.Text = "जतन करा";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Textcolor = System.Drawing.Color.White;
             this.btnSave.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(0, 0);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(500, 10);
-            this.bunifuSeparator2.TabIndex = 16;
-            this.bunifuSeparator2.Transparency = 100;
-            this.bunifuSeparator2.Vertical = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txtCategory);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(500, 300);
-            this.panel3.TabIndex = 5;
-            // 
-            // txtCategory
-            // 
-            this.txtCategory.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategory.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCategory.HintForeColor = System.Drawing.Color.Empty;
-            this.txtCategory.HintText = "मेनू प्रकार  नाव";
-            this.txtCategory.isPassword = false;
-            this.txtCategory.LineFocusedColor = System.Drawing.Color.Tomato;
-            this.txtCategory.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtCategory.LineMouseHoverColor = System.Drawing.Color.Tomato;
-            this.txtCategory.LineThickness = 2;
-            this.txtCategory.Location = new System.Drawing.Point(71, 117);
-            this.txtCategory.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(257, 29);
-            this.txtCategory.TabIndex = 0;
-            this.txtCategory.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // MenuCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(500, 300);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(508, 307);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DisplayHeader = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MenuCategory";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "Menu Category";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -291,7 +262,6 @@
         private Bunifu.Framework.UI.BunifuElipse elipsCategory;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
-        private Bunifu.Framework.UI.BunifuFlatButton btnRemove;
         private Bunifu.Framework.UI.BunifuFlatButton btnSave;
     }
 }

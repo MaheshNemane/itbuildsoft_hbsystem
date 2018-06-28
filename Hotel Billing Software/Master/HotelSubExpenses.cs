@@ -12,7 +12,7 @@ using Bunifu.Framework.UI;
 
 namespace Hotel_Billing_Software.Master
 {
-    public partial class HotelSubExpenses : Form
+    public partial class HotelSubExpenses : MetroFramework.Forms.MetroForm
     {
        BAL.Master.HotelSubExpenseCatergoryMaster hotelSubExpense = new BAL.Master.HotelSubExpenseCatergoryMaster();
         HotelExpenseCategoryMaster HotelExpense = new HotelExpenseCategoryMaster();
@@ -54,6 +54,11 @@ namespace Hotel_Billing_Software.Master
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

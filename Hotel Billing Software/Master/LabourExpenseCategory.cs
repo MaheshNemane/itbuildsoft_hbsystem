@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software.Master
 {
-    public partial class LabourExpenseCategory : Form
+    public partial class LabourExpenseCategory : MetroFramework.Forms.MetroForm
     {
         public LabourExpenseCategory()
         {
             InitializeComponent();
+        }
+
+        private void bunifuGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

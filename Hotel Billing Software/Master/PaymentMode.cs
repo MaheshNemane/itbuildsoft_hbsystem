@@ -12,7 +12,7 @@ using Bunifu.Framework.UI;
 
 namespace Hotel_Billing_Software.Master
 {
-    public partial class PaymentMode : Form
+    public partial class PaymentMode : MetroFramework.Forms.MetroForm
     {
         PaymentModeTransaction paymentMode = new PaymentModeTransaction();
         public PaymentMode()
@@ -44,6 +44,11 @@ namespace Hotel_Billing_Software.Master
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software.Master
 {
-    public partial class SupplierRegistration : Form
+    public partial class SupplierRegistration : MetroFramework.Forms.MetroForm
     {
         SupplierMaster supplierMaster = new SupplierMaster();
         public SupplierRegistration()
@@ -39,6 +39,16 @@ namespace Hotel_Billing_Software.Master
         }
 
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software.Master
 {
-    public partial class MenuSubCategory : Form
+    public partial class MenuSubCategory : MetroFramework.Forms.MetroForm
     {
         MenuSubCategoryMaster menuSubCategory= new MenuSubCategoryMaster();
         MenuCategoryMaster menuCategory = new MenuCategoryMaster();
@@ -50,6 +50,11 @@ namespace Hotel_Billing_Software.Master
         }
 
         private void lblCategoryRegistration_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
