@@ -300,7 +300,7 @@
             this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Snow;
+            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -723,7 +723,7 @@
             this.btnDeleteItem.Activecolor = System.Drawing.Color.Brown;
             this.btnDeleteItem.BackColor = System.Drawing.Color.Brown;
             this.btnDeleteItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDeleteItem.BorderRadius = 0;
+            this.btnDeleteItem.BorderRadius = 5;
             this.btnDeleteItem.ButtonText = "  Delete Item";
             this.btnDeleteItem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeleteItem.DisabledColor = System.Drawing.Color.Gray;
