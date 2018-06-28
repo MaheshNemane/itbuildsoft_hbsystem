@@ -22,7 +22,7 @@ namespace Hotel_Billing_Software.GridPages
         }
         private void btnNewPurchase_Click(object sender, EventArgs e)
         {
-            Transaction.PurchaseMaterial objForm = new Transaction.PurchaseMaterial();
+            Transaction.PurchaseBill objForm = new Transaction.PurchaseBill();
             objForm.ShowDialog();
             onPageLoad();
         }
