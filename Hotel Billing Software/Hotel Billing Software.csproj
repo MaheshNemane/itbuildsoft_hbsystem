@@ -336,12 +336,6 @@
     <Compile Include="Master\PaymentMode.Designer.cs">
       <DependentUpon>PaymentMode.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\PurchaseBill.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Transaction\PurchaseBill.Designer.cs">
-      <DependentUpon>PurchaseBill.cs</DependentUpon>
-    </Compile>
     <Compile Include="Transaction\wineory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -516,9 +510,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master\PaymentMode.resx">
       <DependentUpon>PaymentMode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\PurchaseBill.resx">
-      <DependentUpon>PurchaseBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\wineory.resx">
       <DependentUpon>wineory.cs</DependentUpon>
