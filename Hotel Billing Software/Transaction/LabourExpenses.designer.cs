@@ -45,10 +45,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.LblHeading = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRemove = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.sepratorFooter = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel1.SuspendLayout();
@@ -63,7 +61,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Snow;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.ChaqueDate);
             this.panel1.Controls.Add(this.txtNote);
             this.panel1.Controls.Add(this.TxtBankName);
@@ -75,10 +73,11 @@
             this.panel1.Controls.Add(this.comboBoxEmployeeId);
             this.panel1.Controls.Add(this.txtAmount);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(20, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(500, 280);
+            this.panel1.Size = new System.Drawing.Size(526, 340);
             this.panel1.TabIndex = 4;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // ChaqueDate
             // 
@@ -88,7 +87,7 @@
             this.ChaqueDate.ForeColor = System.Drawing.Color.Black;
             this.ChaqueDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ChaqueDate.FormatCustom = null;
-            this.ChaqueDate.Location = new System.Drawing.Point(261, 189);
+            this.ChaqueDate.Location = new System.Drawing.Point(271, 210);
             this.ChaqueDate.Name = "ChaqueDate";
             this.ChaqueDate.Size = new System.Drawing.Size(204, 29);
             this.ChaqueDate.TabIndex = 25;
@@ -106,7 +105,7 @@
             this.txtNote.LineIdleColor = System.Drawing.Color.Gray;
             this.txtNote.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.txtNote.LineThickness = 2;
-            this.txtNote.Location = new System.Drawing.Point(261, 116);
+            this.txtNote.Location = new System.Drawing.Point(271, 137);
             this.txtNote.Margin = new System.Windows.Forms.Padding(4);
             this.txtNote.Name = "txtNote";
             this.txtNote.Size = new System.Drawing.Size(204, 29);
@@ -126,7 +125,7 @@
             this.TxtBankName.LineIdleColor = System.Drawing.Color.Gray;
             this.TxtBankName.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.TxtBankName.LineThickness = 2;
-            this.TxtBankName.Location = new System.Drawing.Point(261, 153);
+            this.TxtBankName.Location = new System.Drawing.Point(271, 174);
             this.TxtBankName.Margin = new System.Windows.Forms.Padding(4);
             this.TxtBankName.Name = "TxtBankName";
             this.TxtBankName.Size = new System.Drawing.Size(204, 29);
@@ -141,7 +140,7 @@
             this.comboBox2.ForeColor = System.Drawing.Color.Black;
             this.comboBox2.FormatString = "Select";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(36, 156);
+            this.comboBox2.Location = new System.Drawing.Point(46, 177);
             this.comboBox2.MaxDropDownItems = 5;
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(204, 23);
@@ -161,7 +160,7 @@
             this.txtChaqueNo.LineIdleColor = System.Drawing.Color.Gray;
             this.txtChaqueNo.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.txtChaqueNo.LineThickness = 2;
-            this.txtChaqueNo.Location = new System.Drawing.Point(36, 189);
+            this.txtChaqueNo.Location = new System.Drawing.Point(46, 210);
             this.txtChaqueNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtChaqueNo.Name = "txtChaqueNo";
             this.txtChaqueNo.Size = new System.Drawing.Size(204, 29);
@@ -176,7 +175,7 @@
             this.bunifuDatepicker1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(36, 46);
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(46, 67);
             this.bunifuDatepicker1.Name = "bunifuDatepicker1";
             this.bunifuDatepicker1.Size = new System.Drawing.Size(204, 30);
             this.bunifuDatepicker1.TabIndex = 20;
@@ -190,7 +189,7 @@
             this.cmbSubExpenseType.ForeColor = System.Drawing.Color.Black;
             this.cmbSubExpenseType.FormatString = "Select";
             this.cmbSubExpenseType.FormattingEnabled = true;
-            this.cmbSubExpenseType.Location = new System.Drawing.Point(261, 86);
+            this.cmbSubExpenseType.Location = new System.Drawing.Point(271, 107);
             this.cmbSubExpenseType.MaxDropDownItems = 5;
             this.cmbSubExpenseType.Name = "cmbSubExpenseType";
             this.cmbSubExpenseType.Size = new System.Drawing.Size(204, 23);
@@ -206,7 +205,7 @@
             this.cmbExpenseType.ForeColor = System.Drawing.Color.Black;
             this.cmbExpenseType.FormatString = "Select";
             this.cmbExpenseType.FormattingEnabled = true;
-            this.cmbExpenseType.Location = new System.Drawing.Point(36, 86);
+            this.cmbExpenseType.Location = new System.Drawing.Point(46, 107);
             this.cmbExpenseType.MaxDropDownItems = 5;
             this.cmbExpenseType.Name = "cmbExpenseType";
             this.cmbExpenseType.Size = new System.Drawing.Size(204, 23);
@@ -222,7 +221,7 @@
             this.comboBoxEmployeeId.ForeColor = System.Drawing.Color.Black;
             this.comboBoxEmployeeId.FormatString = "Select";
             this.comboBoxEmployeeId.FormattingEnabled = true;
-            this.comboBoxEmployeeId.Location = new System.Drawing.Point(261, 50);
+            this.comboBoxEmployeeId.Location = new System.Drawing.Point(271, 71);
             this.comboBoxEmployeeId.MaxDropDownItems = 5;
             this.comboBoxEmployeeId.Name = "comboBoxEmployeeId";
             this.comboBoxEmployeeId.Size = new System.Drawing.Size(204, 23);
@@ -242,7 +241,7 @@
             this.txtAmount.LineIdleColor = System.Drawing.Color.Gray;
             this.txtAmount.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.txtAmount.LineThickness = 2;
-            this.txtAmount.Location = new System.Drawing.Point(36, 116);
+            this.txtAmount.Location = new System.Drawing.Point(46, 137);
             this.txtAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(204, 29);
@@ -253,21 +252,22 @@
             // 
             this.panel2.Controls.Add(this.bunifuSeparator1);
             this.panel2.Controls.Add(this.LblHeading);
-            this.panel2.Controls.Add(this.btnClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(20, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 40);
+            this.panel2.Size = new System.Drawing.Size(526, 40);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 27);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 29);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(500, 11);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(526, 11);
             this.bunifuSeparator1.TabIndex = 7;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -282,38 +282,21 @@
             this.LblHeading.TabIndex = 6;
             this.LblHeading.Text = "श्रमिक खर्च";
             // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.IndianRed;
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(468, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 21);
-            this.btnClose.TabIndex = 5;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = false;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnCancel);
-            this.panel3.Controls.Add(this.btnRemove);
             this.panel3.Controls.Add(this.btnSave);
             this.panel3.Controls.Add(this.sepratorFooter);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 228);
+            this.panel3.Location = new System.Drawing.Point(20, 318);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(500, 52);
+            this.panel3.Size = new System.Drawing.Size(526, 52);
             this.panel3.TabIndex = 6;
             // 
             // btnCancel
             // 
             this.btnCancel.Activecolor = System.Drawing.Color.Orange;
-            this.btnCancel.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnCancel.BackColor = System.Drawing.Color.Orange;
             this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancel.BorderRadius = 5;
             this.btnCancel.ButtonText = "रद्द करा";
@@ -331,7 +314,7 @@
             this.btnCancel.IconVisible = true;
             this.btnCancel.IconZoom = 50D;
             this.btnCancel.IsTab = false;
-            this.btnCancel.Location = new System.Drawing.Point(395, 17);
+            this.btnCancel.Location = new System.Drawing.Point(323, 17);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.DarkOrange;
             this.btnCancel.OnHovercolor = System.Drawing.Color.Orange;
@@ -343,40 +326,6 @@
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Textcolor = System.Drawing.Color.White;
             this.btnCancel.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRemove.BorderRadius = 5;
-            this.btnRemove.ButtonText = "काढून टाका";
-            this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemove.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRemove.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRemove.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRemove.Iconimage")));
-            this.btnRemove.Iconimage_right = null;
-            this.btnRemove.Iconimage_right_Selected = null;
-            this.btnRemove.Iconimage_Selected = null;
-            this.btnRemove.IconMarginLeft = 0;
-            this.btnRemove.IconMarginRight = 0;
-            this.btnRemove.IconRightVisible = true;
-            this.btnRemove.IconRightZoom = 0D;
-            this.btnRemove.IconVisible = true;
-            this.btnRemove.IconZoom = 50D;
-            this.btnRemove.IsTab = false;
-            this.btnRemove.Location = new System.Drawing.Point(281, 17);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnRemove.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRemove.selected = false;
-            this.btnRemove.Size = new System.Drawing.Size(106, 32);
-            this.btnRemove.TabIndex = 18;
-            this.btnRemove.Text = "काढून टाका";
-            this.btnRemove.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRemove.Textcolor = System.Drawing.Color.White;
-            this.btnRemove.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnSave
             // 
@@ -399,7 +348,7 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 40D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(189, 17);
+            this.btnSave.Location = new System.Drawing.Point(422, 17);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.Green;
             this.btnSave.OnHovercolor = System.Drawing.Color.LimeGreen;
@@ -415,11 +364,12 @@
             // sepratorFooter
             // 
             this.sepratorFooter.BackColor = System.Drawing.Color.Transparent;
+            this.sepratorFooter.Dock = System.Windows.Forms.DockStyle.Top;
             this.sepratorFooter.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.sepratorFooter.LineThickness = 1;
-            this.sepratorFooter.Location = new System.Drawing.Point(0, 4);
+            this.sepratorFooter.Location = new System.Drawing.Point(0, 0);
             this.sepratorFooter.Name = "sepratorFooter";
-            this.sepratorFooter.Size = new System.Drawing.Size(500, 11);
+            this.sepratorFooter.Size = new System.Drawing.Size(526, 11);
             this.sepratorFooter.TabIndex = 16;
             this.sepratorFooter.Transparency = 255;
             this.sepratorFooter.Vertical = false;
@@ -428,14 +378,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(500, 280);
+            this.ClientSize = new System.Drawing.Size(566, 390);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.DisplayHeader = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Expenses";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "Expenses";
             this.Load += new System.EventHandler(this.Expenses_Load);
             this.panel1.ResumeLayout(false);
@@ -462,12 +416,10 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtAmount;
         private System.Windows.Forms.Panel panel3;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
-        private Bunifu.Framework.UI.BunifuFlatButton btnRemove;
         private Bunifu.Framework.UI.BunifuFlatButton btnSave;
         private Bunifu.Framework.UI.BunifuSeparator sepratorFooter;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuCustomLabel LblHeading;
-        private System.Windows.Forms.Button btnClose;
     }
 }

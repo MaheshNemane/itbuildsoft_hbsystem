@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software
 {
-    public partial class Expenses : Form
+    public partial class Expenses : MetroFramework.Forms.MetroForm
     {
         public Expenses()
         {
@@ -53,6 +53,16 @@ namespace Hotel_Billing_Software
         }
 
         private void comboBoxExpensesType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
