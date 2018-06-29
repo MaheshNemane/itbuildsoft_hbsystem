@@ -205,6 +205,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "ChangePassword";
+            this.Load += new System.EventHandler(this.ChangePassword_Load);
             this.PanelMiddle.ResumeLayout(false);
             this.ResumeLayout(false);
 

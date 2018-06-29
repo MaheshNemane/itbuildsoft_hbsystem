@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software
 {
-    public partial class ForgotPassword : Form
+    public partial class ForgotPassword : MetroFramework.Forms.MetroForm
     {
         public ForgotPassword()
         {
@@ -28,6 +28,11 @@ namespace Hotel_Billing_Software
             this.Hide();
             Login login = new Login();
             login.Show();
+        }
+
+        private void PanelHeading_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -31,5 +31,10 @@ namespace Hotel_Billing_Software.Account
         {
 
         }
+
+        private void ChangePassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

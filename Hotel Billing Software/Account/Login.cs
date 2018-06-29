@@ -11,7 +11,7 @@ using BAL.Account;
 
 namespace Hotel_Billing_Software.Account
 {
-    public partial class Login : Form
+    public partial class Login : MetroFramework.Forms.MetroForm
     {
 
         User user = new User();
@@ -74,6 +74,11 @@ namespace Hotel_Billing_Software.Account
             this.Hide();
             ForgotPassword forgotPassword = new ForgotPassword();
             forgotPassword.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

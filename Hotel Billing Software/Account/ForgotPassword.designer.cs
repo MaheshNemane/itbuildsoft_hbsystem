@@ -34,7 +34,6 @@
             this.PanelHeading = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.LabelHeading = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btnClose = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.lblLogin = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -60,17 +59,17 @@
             this.PanelHeading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelHeading.Controls.Add(this.bunifuSeparator1);
             this.PanelHeading.Controls.Add(this.LabelHeading);
-            this.PanelHeading.Controls.Add(this.btnClose);
             this.PanelHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelHeading.GradientBottomLeft = System.Drawing.Color.White;
             this.PanelHeading.GradientBottomRight = System.Drawing.Color.White;
             this.PanelHeading.GradientTopLeft = System.Drawing.Color.White;
             this.PanelHeading.GradientTopRight = System.Drawing.Color.White;
-            this.PanelHeading.Location = new System.Drawing.Point(0, 0);
+            this.PanelHeading.Location = new System.Drawing.Point(20, 30);
             this.PanelHeading.Name = "PanelHeading";
             this.PanelHeading.Quality = 10;
-            this.PanelHeading.Size = new System.Drawing.Size(473, 41);
+            this.PanelHeading.Size = new System.Drawing.Size(460, 41);
             this.PanelHeading.TabIndex = 0;
+            this.PanelHeading.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelHeading_Paint);
             // 
             // bunifuSeparator1
             // 
@@ -94,23 +93,6 @@
             this.LabelHeading.TabIndex = 1;
             this.LabelHeading.Text = "पासवर्ड विसरलात";
             // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.IndianRed;
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(441, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 21);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
@@ -123,10 +105,10 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 147);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(20, 227);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(473, 53);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(460, 53);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
             // lblLogin
@@ -199,10 +181,10 @@
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 41);
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(20, 71);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(473, 106);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(460, 156);
             this.bunifuGradientPanel2.TabIndex = 2;
             // 
             // bunifuCustomLabel1
@@ -276,16 +258,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(473, 200);
+            this.ClientSize = new System.Drawing.Size(500, 300);
             this.Controls.Add(this.bunifuGradientPanel2);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.PanelHeading);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ForgotPassword";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "ForgotPassword";
             this.PanelHeading.ResumeLayout(false);
             this.PanelHeading.PerformLayout();
@@ -301,7 +287,6 @@
 
         private Bunifu.Framework.UI.BunifuElipse ElipseForgotPassword;
         private Bunifu.Framework.UI.BunifuGradientPanel PanelHeading;
-        private System.Windows.Forms.Button btnClose;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelHeading;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;

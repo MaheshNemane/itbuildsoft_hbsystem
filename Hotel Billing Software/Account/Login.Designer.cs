@@ -38,7 +38,6 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.softwareName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtUserName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -64,9 +63,9 @@
             this.companyPanel.Controls.Add(this.bunifuCustomLabel1);
             this.companyPanel.Controls.Add(this.softwareName);
             this.companyPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.companyPanel.Location = new System.Drawing.Point(0, 0);
+            this.companyPanel.Location = new System.Drawing.Point(20, 30);
             this.companyPanel.Name = "companyPanel";
-            this.companyPanel.Size = new System.Drawing.Size(373, 450);
+            this.companyPanel.Size = new System.Drawing.Size(373, 550);
             this.companyPanel.TabIndex = 0;
             // 
             // bunifuCustomLabel3
@@ -132,29 +131,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtUserName);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.lblForgotPassword);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(370, 0);
+            this.panel1.Location = new System.Drawing.Point(370, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(430, 450);
+            this.panel1.Size = new System.Drawing.Size(430, 550);
             this.panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(389, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 15);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -234,13 +221,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(820, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.companyPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "Login";
             this.companyPanel.ResumeLayout(false);
             this.companyPanel.PerformLayout();
@@ -265,6 +257,5 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtUserName;
-        private System.Windows.Forms.Label label1;
     }
 }
