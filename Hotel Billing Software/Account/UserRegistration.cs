@@ -12,7 +12,7 @@ using Bunifu.Framework.UI;
 
 namespace Hotel_Billing_Software.Account
 {
-    public partial class UserRegistration : Form
+    public partial class UserRegistration : MetroFramework.Forms.MetroForm
     {
         User user = new User();
 
@@ -77,6 +77,11 @@ namespace Hotel_Billing_Software.Account
             txtConfirmPassword.Text = "";
             txtPasswordHint.Text = "";
             txtUserName.Focus();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
