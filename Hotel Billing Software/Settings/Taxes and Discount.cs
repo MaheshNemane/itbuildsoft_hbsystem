@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software.Settings
 {
-    public partial class Taxes_and_Discount : Form
+    public partial class Taxes_and_Discount : MetroFramework.Forms.MetroForm
     {
         public Taxes_and_Discount()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
