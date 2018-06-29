@@ -137,7 +137,7 @@
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.lblForgotPassword);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(370, 30);
+            this.panel1.Location = new System.Drawing.Point(400, 30);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(430, 550);
             this.panel1.TabIndex = 1;
@@ -221,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 600);
+            this.ClientSize = new System.Drawing.Size(850, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.companyPanel);
             this.DisplayHeader = false;
