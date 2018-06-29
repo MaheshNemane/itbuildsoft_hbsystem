@@ -60,11 +60,12 @@
             this.PanelMiddle.GradientBottomRight = System.Drawing.Color.White;
             this.PanelMiddle.GradientTopLeft = System.Drawing.Color.White;
             this.PanelMiddle.GradientTopRight = System.Drawing.Color.White;
-            this.PanelMiddle.Location = new System.Drawing.Point(0, 0);
+            this.PanelMiddle.Location = new System.Drawing.Point(20, 30);
             this.PanelMiddle.Name = "PanelMiddle";
             this.PanelMiddle.Quality = 10;
-            this.PanelMiddle.Size = new System.Drawing.Size(318, 225);
+            this.PanelMiddle.Size = new System.Drawing.Size(278, 175);
             this.PanelMiddle.TabIndex = 5;
+            this.PanelMiddle.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMiddle_Paint);
             // 
             // btnSave
             // 
@@ -179,6 +180,7 @@
             this.txtUserName.Size = new System.Drawing.Size(223, 29);
             this.txtUserName.TabIndex = 0;
             this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUserName.OnValueChanged += new System.EventHandler(this.txtUserName_OnValueChanged);
             // 
             // ElipseChangePassword
             // 
@@ -189,13 +191,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(318, 225);
             this.Controls.Add(this.PanelMiddle);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ChangePassword";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "ChangePassword";
             this.PanelMiddle.ResumeLayout(false);
             this.ResumeLayout(false);

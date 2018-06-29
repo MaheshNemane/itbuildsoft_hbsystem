@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Hotel_Billing_Software.Account
 {
-    public partial class ChangePassword : Form
+    public partial class ChangePassword : MetroFramework.Forms.MetroForm
     {
         public ChangePassword()
         {
@@ -20,6 +20,16 @@ namespace Hotel_Billing_Software.Account
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void PanelMiddle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtUserName_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
